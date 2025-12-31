@@ -34,6 +34,7 @@ net start "qssitvs"
 net start "mpdm"
 net start "AADHAAR Camera Vendor Device Manager"
 
+cd derbydb\runtime
 
 explorer .
 
