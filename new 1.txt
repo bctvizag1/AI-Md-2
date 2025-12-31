@@ -1,0 +1,48 @@
+access-list 2 permit 10.34.128.0 0.0.0.31
+
+ip route 10.192.144.0 255.255.255.0 172.19.193.62
+ip route 10.192.144.0 255.255.255.255 FastEthernet3/21
+ip route 10.192.144.0 255.255.255.255 FastEthernet3/5
+
+
+access-list 3 permit 10.34.131.2
+
+
+-----------------
+```cmd
+d: && cd D:\Rao_Projects\FTTH\backend && pm2 start index.js --name=FTTH
+d: && cd D:\Rao_Projects\IPScan\backend && pm2 start server\server.js --name=IPSCAN
+```
+-----------------
+
+----Batch File Script----
+```batch
+@echo off
+d:
+cd D:\Rao_Projects\FTTH\backend
+pm2 start index.js --name=FTTH
+
+d:
+cd D:\Rao_Projects\IPScan\backend
+pm2 start server\server.js --name=IPSCAN
+```batch
+---End-of--Batch File Script----
+
+
+
+net use \\10.34.131.52\IPC$ /user:ITAdmin Itvm#321
+
+
+psExec64 \\10.34.131.52 -u ITAdmin  -p Itvm#321
+
+
+netsh interface ip set address name="Ethernet" static 10.34.131.88 255.255.248.0 10.34.128.1
+
+net user ITAdmin /Expires:
+
+no access-list 3 permit 10.34.130.254
+no access-list 3 permit 10.34.128.35
+no access-list 3 permit 10.34.128.80
+
+
+mysqldump -u root -p --all-databases > all_MYSQL_Db-04102025.sql

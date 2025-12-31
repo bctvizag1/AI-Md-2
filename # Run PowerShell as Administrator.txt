@@ -1,0 +1,24 @@
+# Run PowerShell as Administrator
+Add-Content -Path "$env:SystemRoot\System32\drivers\etc\hosts" -Value "10.198.215.33 smaxems.cdrdc.bsnl.co.in"
+
+
+
+wevtutil qe System /q:"*[System[(EventID=6008)]]" /c:5 /f:text /rd:true | find "unexpected"
+
+
+http://localhost:3003/api/olt-reports/historyData
+
+http://10.34.128.25:3003/api/olt-reports/historyData
+
+bsnl@123
+
+pip install groq
+ 
+
+
+
+net user ItAdmin /EXPIRES:NEVER
+
+
+bsnlapocscgpm_vsk_900714
+8224-7957-4052

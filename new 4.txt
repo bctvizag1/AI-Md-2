@@ -1,0 +1,40 @@
+sudo mount /dev/sdb1 /mnt/fileUploadVolume/
+cd /mnt/fileUploadVolume/nodeserver_adodb
+cd /mnt/fileUploadVolume/ServiceDir/backend
+pm2 start src/index.js
+
+
+----
+cd /mnt/fileUploadVolume/db_backup/
+mysqldump -u root -p fileupload > fileupload_26112025.sql
+mysqldump -u root -p ipScanDb > ipScanDb_26112025.sql
+
+----
+
+bsnl@123
+kannel_user
+
+ host="localhost",
+    user="root",
+    password="kannel_user",
+    database="fileupload"
+	
+	
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| dlr                |
+| fileupload         |
+| information_schema |
+| ipScanDb           |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| sys                |
+| vehicle_log_db     |
++--------------------+
+9 rows in set (0.00 sec)
+
+mysqldump -u root -p vehicle_log_db > vehicle_log_db.sql
