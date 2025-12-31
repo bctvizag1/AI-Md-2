@@ -35,6 +35,8 @@ net start "mpdm"
 net start "AADHAAR Camera Vendor Device Manager"
 
 
+explorer .
+
 
 
 
