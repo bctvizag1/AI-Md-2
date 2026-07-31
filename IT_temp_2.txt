@@ -1,0 +1,34 @@
+net user ITAdmin /Expires:neverexit
+cls
+
+
+wevtutil qe System /q:"*[System[(EventID=6008)]]" /c:15 /f:text /rd:true | find "unexpected"
+
+
+
+net user jtomkp Bsnlap@123
+cls
+
+
+
+
+Your ID: 119689505
+Password: 24308
+
+runas /savecred /user:ITAdmin "cmd.exe"
+
+
+Name.KIMIDI SNDHYA RANI
+bsnlapfr_VSK_6352_707961
+Sation ID. 23042
+Aadhar : 486450876352
+
+
+bsnlap@123
+
+
+
+L1 Electrical
+
+09-Apr-2023 10:32 PM
+

@@ -1,0 +1,26 @@
+ssh bsnlproxy@10.34.130.254
+
+
+sudo mount /dev/sdb1 /mnt/fileUploadVolume/
+
+cd  /home/bsnlproxy/Desktop/ITSERVER/nodeserver_adodb/
+
+pm2 start index.js
+
+cd  /home/bsnlproxy/Desktop/ITSERVER/ServiceDir/backend
+
+pm2 start src/index.js
+
+
+
+sudo mount /dev/sda1 /mnt/fileUploadVolume/
+
+
+
+
+
+
+
+
+
+sudo shutdown -c

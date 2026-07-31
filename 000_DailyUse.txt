@@ -1,0 +1,60 @@
+
+
+net user ITAdmin Itvm#321
+
+net user ITAdmin /Expires:never
+
+cls
+
+
+net user "Lucky" Bsnlap@123
+
+cls
+
+
+net localgroup "Network Configuration Operators" "JTO BSNL" /add
+
+
+net localgroup "Network Configuration Operators" "DGM-CFA-BSNL" /add
+
+net localgroup "Network Configuration Operators" "AADHAR-NRP" /add
+
+
+net localgroup "Network Configuration Operators" "SDE-IT" /add
+
+
+Add-Content -Path "C:\Windows\System32\drivers\etc\hosts" -Value "`n10.198.215.33   smaxems.cdrdc.bsnl.co.in"
+
+
+netsh interface ip set address name="Ethernet" static 10.34.128.86 255.255.248.0 10.34.128.1
+
+
+net localgroup "Network Configuration Operators" "JTO-TX-ANK" /add
+
+
+
+
+wmic UserAccount where "Name='JTO IT'" set PasswordExpires=False
+
+cls
+
+
+OOBE\BYPASSNRO
+
+
+http://10.35.240.10/itinv/trinetra_ssa
+
+
+Devices and Printers
+
+explorer.exe shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}.
+
+
+
+
+
+
+
+
+
+

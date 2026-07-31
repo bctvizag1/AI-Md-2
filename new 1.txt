@@ -38,7 +38,7 @@ psExec64 \\10.34.131.52 -u ITAdmin  -p Itvm#321
 
 netsh interface ip set address name="Ethernet" static 10.34.131.88 255.255.248.0 10.34.128.1
 
-net user ITAdmin /Expires:
+net user ITAdmin /Expires:never
 
 no access-list 3 permit 10.34.130.254
 no access-list 3 permit 10.34.128.35

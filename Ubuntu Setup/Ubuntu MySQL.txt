@@ -4,6 +4,7 @@ pm2 start index.js
 cd /mnt/fileUploadVolume/ServiceDir/backend
 pm2 start src/index.js
 
+bsnlvm
 bsnl@123
 
  host="localhost",
@@ -30,3 +31,9 @@ mysql> show databases
 9 rows in set (0.00 sec)
 
 mysqldump -u root -p vehicle_log_db > vehicle_log_db.sql
+
+
+host="localhost",
+    user="root",
+    password="kannel_user",
+    database="fileupload"

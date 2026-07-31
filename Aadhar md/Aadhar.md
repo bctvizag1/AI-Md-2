@@ -2,6 +2,8 @@
 > 0704_Admin3  
 > SARKhZ1PWS
 
+> This EA Circle Nodal Aadhaar Number ``770988930483`` for L1 creations from version 203-7inplace of Credentials please
+
 > KAwJHEQEfD
 
 ```cmd
@@ -60,4 +62,14 @@ runas /savecred /user:ITAdmin "cmd.exe"
 # Run PowerShell as Administrator
 ```powershell
 Add-Content -Path "$env:SystemRoot\System32\drivers\etc\hosts" -Value "10.198.215.33 smaxems.cdrdc.bsnl.co.in"
+```
+
+------
+
+```
+net start "aouc"
+net start "qssitvs"
+net start "mpdm"
+net start "AADHAAR Camera Vendor Device Manager"
+
 ```

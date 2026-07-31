@@ -7,7 +7,7 @@ pm2 start src/index.js
 ----
 cd /mnt/fileUploadVolume/db_backup/
 mysqldump -u root -p fileupload > fileupload_26112025.sql
-mysqldump -u root -p ipScanDb > ipScanDb_26112025.sql
+mysqldump -u root -p ipScanDb > ipScanDb_2026-06-10.sql
 
 ----
 

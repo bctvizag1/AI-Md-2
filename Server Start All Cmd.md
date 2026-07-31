@@ -30,3 +30,25 @@ nodemon
 
 sudo systemctl start mssql-server
 ```
+
+
+----------------
+----------------
+```
+ssh bsnlproxy@10.34.130.254
+```
+
+```
+
+sudo mount /dev/sdb1 /mnt/fileUploadVolume/
+```
+
+```
+cd /mnt/fileUploadVolume/nodeserver_adodb/
+
+pm2 start index.js
+
+cd /mnt/fileUploadVolume/ServiceDir/backend
+
+pm2 start src/index.js
+```
